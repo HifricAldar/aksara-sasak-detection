@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+
+# ======================
+# MODELS
+# ======================
+# Ignore semua isi folder models/
+models/*
+# Kecuali file .keep agar folder tetap muncul
+!models/.keep
+
+# Ignore semua file model (di mana saja)
+*.h5
+*.hdf5
+*.pkl
+*.pt
+*.pth
+*.joblib
+*.sav
+
+# ======================
+# DATA
+# ======================
+
+# Ignore semua isi folder data/
+data/*
+
+# Izinkan 3 folder structure tetap kelihatan
+!data/raw/
+!data/preprocessing/
+!data/compress/
+
+# Ignore semua isi preprocessing & compress
+data/preprocessing/*
+data/compress/*
+
+# Izinkan .keep agar folder tetap ada
+!data/raw/.keep
+!data/preprocessing/.keep
+!data/compress/.keep
+
+# Raw boleh upload file apa pun
+# (tidak perlu aturan tambahan)
+
+# File besar dataset
+*.csv
+*.json
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
